@@ -3,6 +3,7 @@
 def custom_charts(data):
     import matplotlib.pyplot as plt
     plt.figure(figsize=(8,4))
+    plt.style.use(['bmh','/workspaces/custom_charts/styles/mystyle.mplstyle'])
     # Create Watermark
     plt.figtext(x=0.89, y=0.12, s="©2025 New Insight Analytics", 
                 color='#054f70', fontsize=10, weight='ultralight',
