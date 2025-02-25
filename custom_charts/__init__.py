@@ -1,12 +1,23 @@
 # custom_charts/__init__.py
+import matplotlib.pyplot as plt
+import matplotlib as mpl
 
-def custom_charts(data):
-    import matplotlib.pyplot as plt
-    plt.figure(figsize=(8,4))
+
+def set_custom_style():
     plt.style.use(['bmh','/workspaces/custom_charts/styles/mystyle.mplstyle'])
-    # Create Watermark
-    plt.figtext(x=0.89, y=0.12, s="©2025 New Insight Analytics", 
-                color='#054f70', fontsize=10, weight='ultralight',
-                ha='right', va='bottom', transform=plt.gcf().transFigure)
-    plt.plot(data)
-    plt.show()
+    plt.set_cmap('crest')
+    plt.rcParams['figure.figsize'] = (8,4) # Set default figure size
+    plt.rcParams['axes.titlecolor'] = '#4f4f4f'  # Set title color
+    plt.rcParams['axes.labelcolor'] = '#636365'  # Set label color
+    plt.rcParams['ytick.labelcolor'] = '#636365' # Set y axis tick label color
+    plt.rcParams['xtick.labelcolor'] = '#636365' # Set x axis tick label color
+
+def add_watermark():
+    fig = plt.gcf()
+    fig.text(x=0.89, y=0.12, s="©2025 New Insight Analytics", 
+                color='#4f4f4f', fontsize=10, weight='ultralight',
+                ha='right', va='bottom', transform=fig.transFigure)
+    
+
+
+

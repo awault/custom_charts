@@ -22,7 +22,7 @@ xtick.major.size : 0
 ytick.major.size : 0
 
 # Set Font Sizes
-axes.titlesize: 14
+axes.titlesize: 16
 axes.labelsize : 10
 xtick.labelsize : 8
 ytick.labelsize : 8
