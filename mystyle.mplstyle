@@ -1,0 +1,28 @@
+# Color Palette
+# black_bamboo = #0e282f
+# deep_breath = #054f70
+# lush_sage = #066f66
+# vibrant_jungle = #418755
+# lime_sorbet = #83b651
+# digital = #636365
+# fashion_gray = #a29c94
+# natural_gray = #c4c0bb
+
+# Custom Color Palette -> Just a reminder, cannot set here
+# axes.prop_cycle : cycler(color=['#0e282f', '#054f70', '#066f66', '#418755', '#83b651'])
+
+# Chart Resolution
+figure.dpi : 300.0
+
+# Grid Settings
+grid.linewidth : 0.7
+
+# Remove major ticks
+xtick.major.size : 0
+ytick.major.size : 0
+
+# Set Font Sizes
+axes.titlesize: 14
+axes.labelsize : 10
+xtick.labelsize : 8
+ytick.labelsize : 8
