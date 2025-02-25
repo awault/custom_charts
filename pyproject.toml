@@ -1,0 +1,12 @@
+# System Configuration
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+#Project metadata
+[project]
+name = 'custom_charts'
+version = "0.1.0"
+description = "Custom Matplotlib chart styles"
+authors = [{ name = "Adam Ault", email = "adam.ault@newinsightanalytics.com"}]
+dependencies = ["matplotlib"]
