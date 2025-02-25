@@ -1,6 +1,7 @@
 # custom_charts/__init__.py
 import matplotlib.pyplot as plt
 import matplotlib as mpl
+import os
 
 
 def set_custom_style():
