@@ -4,7 +4,8 @@ import matplotlib as mpl
 
 
 def set_custom_style():
-    plt.style.use(['bmh','/workspaces/custom_charts/styles/mystyle.mplstyle'])
+    style_path = os.path.join(os.path.dirname(__file__), 'styles', 'mystyle.mplstyle')
+    plt.style.use(['bmh', style_path])
     plt.set_cmap('crest')
     plt.rcParams['figure.figsize'] = (8,4) # Set default figure size
     plt.rcParams['axes.titlecolor'] = '#4f4f4f'  # Set title color
