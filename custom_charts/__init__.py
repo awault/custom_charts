@@ -6,8 +6,8 @@ import os
 
 def set_custom_style():
     style_path = os.path.join(os.path.dirname(__file__), 'styles', 'mystyle.mplstyle')
-    plt.style.use(['bmh', style_path])
-    plt.set_cmap('crest')
+    plt.style.use(['bmh', style_path]) # style_path connects to mystyle.mplstyle
+    plt.set_cmap('crest') # select a colormap
     plt.rcParams['figure.figsize'] = (8,4) # Set default figure size
     plt.rcParams['axes.titlecolor'] = '#4f4f4f'  # Set title color
     plt.rcParams['axes.labelcolor'] = '#636365'  # Set label color
